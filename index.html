@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10%;
+      background: #111827;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      max-width: 600px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h3 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      font-size: 14px;
+    }
+
+    @media(max-width: 600px){
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>MyPortfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>Hello, I'm a Web Developer 👋</h2>
+  <p>I build modern, responsive websites and web applications using HTML, CSS, JavaScript, React and WordPress.</p>
+  <a class="btn" href="#contact">Hire Me</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h3>About Me</h3>
+  <p>
+    I am a passionate web developer who loves building clean and user-friendly interfaces.
+    I specialize in frontend development and WordPress solutions.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h3>Skills</h3>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React</span>
+    <span>WordPress</span>
+    <span>PHP</span>
+    <span>Git</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Portfolio Website</h4>
+      <p>A personal portfolio built with HTML and CSS.</p>
+    </div>
+
+    <div class="card">
+      <h4>Blog Platform</h4>
+      <p>A simple blog system with CMS integration.</p>
+    </div>
+
+    <div class="card">
+      <h4>E-commerce UI</h4>
+      <p>Modern UI design for an online shop.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h3>Contact</h3>
+  <p>Email: yourname@example.com</p>
+  <p>Phone: +880 123 456 789</p>
+</section>
+
+<footer>
+  © 2026 My Portfolio. All rights reserved.
+</footer>
+
+</body>
+</html>
